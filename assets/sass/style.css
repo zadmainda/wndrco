@@ -1,5 +1,61 @@
-* {
+*, *::before, *::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url(../fonts/Gilroy/Gilroy-Light.otf) format("opentype");
+}
+.navbar {
+  background-color: #F2EDE3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 60px 60px 5%;
+}
+.navbar_brand {
+  width: 10%;
+}
+.navbar_link {
+  list-style: none;
+  display: flex;
+  width: 500px;
+  justify-content: space-around;
+}
+.navbar_link_item {
+  display: block;
+  margin-left: 16px;
+}
+.navbar_link_item a {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+.navbar_link_item a:hover {
+  color: #293db2;
+}
+
+.hero {
+  height: 100vh;
+  background-color: #F2EDE3;
+  padding-left: 5%;
+}
+.hero_image {
+  margin-top: 350px;
+  width: 19%;
+}
+.hero_headline {
+  font-size: 70px;
+  width: 80%;
+  margin-top: 80px;
+  line-height: 1.2;
 }/*# sourceMappingURL=style.css.map */

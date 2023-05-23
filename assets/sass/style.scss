@@ -1,9 +1,61 @@
+@import "reset";
+@import "variables";
 
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+
+.navbar{
+    background-color: $creamWhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 60px 60px 5%;
+
+
+    &_brand{
+        width: 10%;
+    }
+
+    &_link{
+        list-style: none;
+        display: flex;
+        width: 500px;
+        justify-content: space-around;
+
+        &_item{
+            display: block;
+            margin-left: 16px;
+            
+            a{
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 10px;
+                font-size: 18px;
+                font-weight: 700;
+                color: $primary-color;
+
+                &:hover{
+                    color: $brightBlue;
+                }
+            }
+        } 
+    }
 }
 
 
+.hero{
+    height: 100vh;
+    background-color: $creamWhite;
+    padding-left: 5%;
+
+    &_image{
+        margin-top: 350px;
+        width: 19%;
+    }
+
+    &_headline{
+        font-size: 70px;
+        width: 80%;
+        margin-top: 80px;
+        line-height: 1.2;
+    }
+}
