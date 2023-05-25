@@ -20,16 +20,23 @@
         display: flex;
         width: 500px;
         justify-content: space-around;
+        position: relative;
+
+        #toggle{
+            display: none;
+            outline: none;
+        }
 
         &_item{
             display: block;
             margin-left: 16px;
+            position: relative;
             
             a{
                 text-transform: uppercase;
                 text-decoration: none;
                 padding: 10px;
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 700;
                 color: $primary-color;
 
@@ -37,23 +44,51 @@
                     color: $brightBlue;
                 }
             }
+
+        
         } 
     }
 }
 
 .link_item_btn{
-    outline: none;
-    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: $primary-color;
+    text-transform: uppercase;
 }
+
+.link_item_btn:hover{
+    color: $brightBlue;
+}
+
+.dropdown{ 
+    display: none;
+}
+
+.navbar_link_item:hover  .dropdown{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 150%;
+
+    &_item a{
+        line-height: 1.8;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+ }
+
 
 
 .hero{
-    height: 100vh;
+    height: calc(100vh - 150px);
     background-color: $creamWhite;
     padding-left: 5%;
 
     &_image{
-        margin-top: 350px;
+        margin-top: 250px;
         width: 19%;
     }
 
@@ -62,5 +97,56 @@
         width: 80%;
         margin-top: 80px;
         line-height: 1.2;
+    }
+}
+
+.showcase{
+    height: 100vh ;
+    background-color: $brightBlue;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 80% 20%;
+    position: relative;
+
+    &_header{
+        color: #fff;
+        font-size: 75px;
+        font-weight: 700;
+        grid-column: 1;
+        top: 30%;
+        left: 15%;
+        position: absolute;
+        
+    }
+    &_img{
+        grid-column: 2;
+        width: 85%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    &_body{
+        color: #fff;
+        font-size: 24px;
+        grid-column: 2;
+        align-self: center;
+        width: 80%;
+    }
+}
+
+.partners{
+    width: 800px;
+    margin: 100px auto;
+
+    &_header{
+        font-size: 70px;
+        line-height: 1.5;
+        color: $primary-color;
+    }
+    &_body{
+        color: $primary-color;
+        font-size: 20px;
+        line-height: 1.5;
     }
 }
