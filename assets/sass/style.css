@@ -176,8 +176,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: red;
-  opacity: 0.4;
+  background-color: rgba(113, 16, 158, 0.9);
+  opacity: 0.5;
   z-index: 2;
 }
 .gallery_card_name {
@@ -193,4 +193,23 @@ body {
 .gallery_card img {
   width: 100%;
   height: 100%;
+}
+
+.portifolio {
+  height: 300px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.portifolio_head, .portifolio_body {
+  margin-left: 15%;
+}
+.portifolio_head {
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+.portifolio_body {
+  font-size: 20px;
+  max-width: 800px;
 }/*# sourceMappingURL=style.css.map */
