@@ -86,9 +86,12 @@ body {
 }
 
 .hero {
-  height: calc(100vh - 150px);
+  height: calc(100vh + 110px);
   background-color: #F2EDE3;
   padding-left: 5%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 .hero_image {
   margin-top: 250px;
@@ -99,6 +102,19 @@ body {
   width: 80%;
   margin-top: 80px;
   line-height: 1.2;
+  z-index: 5;
+}
+.hero::after {
+  content: "";
+  height: 1200px;
+  width: 1200px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -600px;
+  right: -500px;
+  z-index: -1;
+  opacity: 0.5;
 }
 
 .showcase {
@@ -109,6 +125,16 @@ body {
   grid-template-columns: 40% 60%;
   grid-template-rows: 80% 20%;
   position: relative;
+  z-index: 1;
+}
+.showcase::before {
+  content: "";
+  width: 6px;
+  height: 300px;
+  background-color: #293db2;
+  position: absolute;
+  left: 10%;
+  top: -20%;
 }
 .showcase_header {
   color: #fff;
@@ -176,7 +202,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(113, 16, 158, 0.9);
+  background-color: rgba(62, 14, 33, 0.9);
   opacity: 0.5;
   z-index: 2;
 }
@@ -197,7 +223,6 @@ body {
 
 .portifolio {
   height: 300px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,4 +237,12 @@ body {
 .portifolio_body {
   font-size: 20px;
   max-width: 800px;
+}
+
+.investment {
+  width: 100vw;
+}
+.investment_item {
+  display: flex;
+  width: 100vw;
 }/*# sourceMappingURL=style.css.map */
