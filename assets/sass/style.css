@@ -202,7 +202,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(62, 14, 33, 0.9);
+  background-color: rgba(149, 192, 209, 0.9);
   opacity: 0.5;
   z-index: 2;
 }
@@ -240,9 +240,13 @@ body {
 }
 
 .investment {
-  width: 100vw;
+  width: 100%;
 }
 .investment_item {
   display: flex;
-  width: 100vw;
+  width: 100%;
+  border: 1px solid red;
+  height: 350px;
+  background-color: #293db2;
+  border-left: 20px solid tomato;
 }/*# sourceMappingURL=style.css.map */

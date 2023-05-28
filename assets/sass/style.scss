@@ -256,10 +256,15 @@
 
 
 .investment{
-    width: 100vw;
+    width: 100%;
     &_item{
         display: flex;
-        width: 100vw;
+        width: 100%;
+        border: 1px solid red;
+        height: 350px;
+        background-color: $brightBlue;
+        border-left: 20px solid tomato;
+
 
         &_title{
 
