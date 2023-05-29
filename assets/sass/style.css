@@ -10480,7 +10480,7 @@ readers do not read off random characters that represent icons */
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(71, 91, 186, 0.9);
+  background-color: rgba(59, 69, 23, 0.9);
   opacity: 0.5;
   z-index: 2;
 }
@@ -10526,36 +10526,7 @@ readers do not read off random characters that represent icons */
   border-left: 20px solid tomato;
   justify-content: space-between;
   position: relative;
-}
-.investment_item.one {
-  border-left: 20px solid #293db2;
-}
-.investment_item.one:hover {
-  background-color: blue;
-}
-.investment_item.two {
-  border-left: 20px solid #c92173;
-}
-.investment_item.two:hover {
-  background-color: #c92173;
-}
-.investment_item.three {
-  border-left: 20px solid #fc9900;
-}
-.investment_item.three:hover {
-  background-color: #fc9900;
-}
-.investment_item.four {
-  border-left: 20px solid #ed1c24;
-}
-.investment_item.four:hover {
-  background-color: #ed1c24;
-}
-.investment_item.five {
-  border-left: 20px solid #293db2;
-}
-.investment_item.five:hover {
-  background-color: #293db2;
+  transition: all 0.2s;
 }
 .investment_item_title {
   margin-left: 40px;
@@ -10578,4 +10549,59 @@ readers do not read off random characters that represent icons */
   position: absolute;
   right: 30px;
   top: 50%;
+}
+.investment_item.one {
+  border-left: 20px solid #293db2;
+}
+.investment_item.one:hover {
+  background-color: blue;
+  color: #fff;
+}
+.investment_item.two {
+  border-left: 20px solid #c92173;
+}
+.investment_item.two:hover {
+  background-color: #c92173;
+  color: #fff;
+}
+.investment_item.three {
+  border-left: 20px solid #fc9900;
+}
+.investment_item.three:hover {
+  background-color: #fc9900;
+  color: #fff;
+}
+.investment_item.four {
+  border-left: 20px solid #ed1c24;
+}
+.investment_item.four:hover {
+  background-color: #ed1c24;
+  color: #fff;
+}
+.investment_item.five {
+  border-left: 20px solid #293db2;
+}
+.investment_item.five:hover {
+  background-color: #293db2;
+  color: #fff;
+}
+.investment_item:hover .investment_item_content {
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #1f1f1f;
+  font-size: 20px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  line-height: 6;
+}
+.footer_terms a:last-child {
+  margin-left: 30px;
 }/*# sourceMappingURL=style.css.map */

@@ -273,44 +273,11 @@
         border-left: 20px solid tomato;
         justify-content: space-between;
         position: relative;
-        
-        &.one{
-            border-left: 20px solid #293db2;
-            &:hover{
-                background-color: blue;
-            }
-        }
-        &.two{
-            border-left: 20px solid #c92173;
-            &:hover{
-                background-color: #c92173;
-            }
-            
-        }
-        &.three{
-            border-left: 20px solid #fc9900;
-            &:hover{
-                background-color: #fc9900;
-            }
-            
-        }
-        &.four{
-            border-left: 20px solid #ed1c24;
-            &:hover{
-                background-color: #ed1c24;
-            }
-        }
-        &.five{
-            border-left: 20px solid #293db2;
-            &:hover{
-                background-color: #293db2;
-            }
-        }
+        transition: all 0.2s ;
 
         &_title{
             margin-left: 40px;
             margin-top: 120px;
-           
 
         }
         &_section{
@@ -332,6 +299,67 @@
             right: 30px;
             top: 50%;
         }
+        
+        &.one{
+            border-left: 20px solid #293db2;
+            &:hover{
+                background-color: blue;
+                color: #fff;
+            }
+        }
+        &.two{
+            border-left: 20px solid #c92173;
+            &:hover{
+                background-color: #c92173;
+                color: #fff;
+            }
+            
+        }
+        &.three{
+            border-left: 20px solid #fc9900;
+            &:hover{
+                background-color: #fc9900;
+                color: #fff;
+            }
+            
+        }
+        &.four{
+            border-left: 20px solid #ed1c24;
+            &:hover{
+                background-color: #ed1c24;
+                color: #fff;
+            }
+        }
+        &.five{
+            border-left: 20px solid #293db2;
+            &:hover{
+                background-color: #293db2;
+                color: #fff;
+            }
+        }
+        &:hover &_content{
+            color: #fff;
+        }
+
+        
     }
 
 }
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: $primary-color;
+    font-size: 20px;
+
+    a{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        line-height: 6;
+    }
+    &_terms a:last-child{
+        margin-left: 30px;
+    }
+}
+
