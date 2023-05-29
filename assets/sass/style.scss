@@ -1,6 +1,16 @@
 @import "reset";
 @import "variables";
 
+// importing core styling file
+@import "../fonts/fontawesome/scss/fontawesome.scss";
+
+// our project needs Solid + Brands
+@import "../fonts/fontawesome/scss/solid.scss";
+@import "../fonts/fontawesome/scss/brands.scss";
+
+
+
+
 
 
 .navbar{
@@ -260,25 +270,42 @@
     &_item{
         display: flex;
         width: 100%;
-        border: 1px solid red;
-        height: 350px;
         background-color: $brightBlue;
         border-left: 20px solid tomato;
+        justify-content: space-between;
+        position: relative;
+        &:hover{
+            background-color: red;
+        }
 
 
         &_title{
+            margin-left: 40px;
+            margin-top: 120px;
+           
 
         }
         &_section{
+            width: 70%;
+            padding: 120px 80px 120px 100px;
 
         }
         &_head{
-
+            font-size: 70px;
+            font-weight: 700;
         }
         &_content{
-
+            font-size: 18px;
+            color: $primary-color;
         }
-
+        &_arrow{
+            border: 2px solid red;
+            font-size: 24px;
+            position: absolute;
+            right: 30px;
+            top: 50%;
+        }
     }
+    
     
 }
