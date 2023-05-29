@@ -10480,7 +10480,7 @@ readers do not read off random characters that represent icons */
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(120, 107, 159, 0.9);
+  background-color: rgba(71, 91, 186, 0.9);
   opacity: 0.5;
   z-index: 2;
 }
@@ -10523,13 +10523,39 @@ readers do not read off random characters that represent icons */
 .investment_item {
   display: flex;
   width: 100%;
-  background-color: #293db2;
   border-left: 20px solid tomato;
   justify-content: space-between;
   position: relative;
 }
-.investment_item:hover {
-  background-color: red;
+.investment_item.one {
+  border-left: 20px solid #293db2;
+}
+.investment_item.one:hover {
+  background-color: blue;
+}
+.investment_item.two {
+  border-left: 20px solid #c92173;
+}
+.investment_item.two:hover {
+  background-color: #c92173;
+}
+.investment_item.three {
+  border-left: 20px solid #fc9900;
+}
+.investment_item.three:hover {
+  background-color: #fc9900;
+}
+.investment_item.four {
+  border-left: 20px solid #ed1c24;
+}
+.investment_item.four:hover {
+  background-color: #ed1c24;
+}
+.investment_item.five {
+  border-left: 20px solid #293db2;
+}
+.investment_item.five:hover {
+  background-color: #293db2;
 }
 .investment_item_title {
   margin-left: 40px;
@@ -10548,7 +10574,6 @@ readers do not read off random characters that represent icons */
   color: #1f1f1f;
 }
 .investment_item_arrow {
-  border: 2px solid red;
   font-size: 24px;
   position: absolute;
   right: 30px;

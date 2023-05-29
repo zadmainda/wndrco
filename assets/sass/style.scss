@@ -270,14 +270,42 @@
     &_item{
         display: flex;
         width: 100%;
-        background-color: $brightBlue;
         border-left: 20px solid tomato;
         justify-content: space-between;
         position: relative;
-        &:hover{
-            background-color: red;
+        
+        &.one{
+            border-left: 20px solid #293db2;
+            &:hover{
+                background-color: blue;
+            }
         }
-
+        &.two{
+            border-left: 20px solid #c92173;
+            &:hover{
+                background-color: #c92173;
+            }
+            
+        }
+        &.three{
+            border-left: 20px solid #fc9900;
+            &:hover{
+                background-color: #fc9900;
+            }
+            
+        }
+        &.four{
+            border-left: 20px solid #ed1c24;
+            &:hover{
+                background-color: #ed1c24;
+            }
+        }
+        &.five{
+            border-left: 20px solid #293db2;
+            &:hover{
+                background-color: #293db2;
+            }
+        }
 
         &_title{
             margin-left: 40px;
@@ -299,13 +327,11 @@
             color: $primary-color;
         }
         &_arrow{
-            border: 2px solid red;
             font-size: 24px;
             position: absolute;
             right: 30px;
             top: 50%;
         }
     }
-    
-    
+
 }
