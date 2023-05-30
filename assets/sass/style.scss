@@ -13,6 +13,7 @@
 
 
 
+
 .navbar{
     background-color: $creamWhite;
     display: flex;
@@ -54,8 +55,6 @@
                     color: $brightBlue;
                 }
             }
-
-        
         } 
     }
 }
@@ -72,7 +71,7 @@
 }
 
 .dropdown{ 
-    display: none;
+    opacity: 1;
 }
 
 .navbar_link_item:hover  .dropdown{
@@ -80,7 +79,6 @@
     padding: 0;
     margin: 0;
     position: absolute;
-    top: 150%;
 
     &_item a{
         line-height: 1.8;
@@ -88,6 +86,85 @@
         margin: 0;
         padding: 0;
     }
+ }
+
+ @media screen and (max-width:600px) {
+    
+.navbar{
+    background-color: $creamWhite;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 6px 6px 6px;
+
+
+    &_brand{
+        width: 10%;
+    }
+
+    &_link{
+        list-style: none;
+        display: flex;
+        width: 400px;
+        justify-content: space-around;
+        position: relative;
+
+        #toggle{
+            display: none;
+            outline: none;
+        }
+
+        &_item{
+            display: block;
+            margin-left: 16px;
+            position: relative;
+            
+            a{
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 10px;
+                font-size: 16px;
+                font-weight: 700;
+                color: $primary-color;
+
+                &:hover{
+                    color: $brightBlue;
+                }
+            }
+        } 
+    }
+}
+
+.link_item_btn{
+    font-size: 16px;
+    font-weight: 700;
+    color: $primary-color;
+    text-transform: uppercase;
+}
+
+.link_item_btn:hover{
+    color: $brightBlue;
+}
+
+.dropdown{ 
+    opacity: 1;
+}
+
+.navbar_link_item:hover  .dropdown{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+
+    &_item a{
+        line-height: 1.8;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+ }
+
+    
  }
 
 
@@ -127,6 +204,43 @@
     }
     
 }
+
+
+@media screen and (max-width:600px) {
+    .hero{
+        background-color: $creamWhite;
+        padding-left: 5%;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        
+    
+        &_image{
+            width: 19%;
+        }
+    
+        &_headline{
+            font-size: 40px;
+            width: 80%;
+            line-height: 1.2;
+            z-index: 5;
+        }
+        &::after{
+            content: '';
+            height: 600px;
+            width: 600px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -600px;
+            right: -500px;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        
+    }
+}
+
 
 .showcase{
     height: 100vh ;
@@ -363,3 +477,8 @@
     }
 }
 
+
+@media screen and (max-width:600px) {
+
+    
+}

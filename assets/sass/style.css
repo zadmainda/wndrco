@@ -10346,7 +10346,7 @@ readers do not read off random characters that represent icons */
 }
 
 .dropdown {
-  display: none;
+  opacity: 1;
 }
 
 .navbar_link_item:hover .dropdown {
@@ -10354,7 +10354,6 @@ readers do not read off random characters that represent icons */
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 150%;
 }
 .navbar_link_item:hover .dropdown_item a {
   line-height: 1.8;
@@ -10363,6 +10362,69 @@ readers do not read off random characters that represent icons */
   padding: 0;
 }
 
+@media screen and (max-width: 600px) {
+  .navbar {
+    background-color: #F2EDE3;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 6px 6px 6px;
+  }
+  .navbar_brand {
+    width: 10%;
+  }
+  .navbar_link {
+    list-style: none;
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    position: relative;
+  }
+  .navbar_link #toggle {
+    display: none;
+    outline: none;
+  }
+  .navbar_link_item {
+    display: block;
+    margin-left: 16px;
+    position: relative;
+  }
+  .navbar_link_item a {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1f1f1f;
+  }
+  .navbar_link_item a:hover {
+    color: #293db2;
+  }
+  .link_item_btn {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1f1f1f;
+    text-transform: uppercase;
+  }
+  .link_item_btn:hover {
+    color: #293db2;
+  }
+  .dropdown {
+    opacity: 1;
+  }
+  .navbar_link_item:hover .dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+  }
+  .navbar_link_item:hover .dropdown_item a {
+    line-height: 1.8;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
 .hero {
   height: calc(100vh + 110px);
   background-color: #F2EDE3;
@@ -10395,6 +10457,36 @@ readers do not read off random characters that represent icons */
   opacity: 0.5;
 }
 
+@media screen and (max-width: 600px) {
+  .hero {
+    background-color: #F2EDE3;
+    padding-left: 5%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .hero_image {
+    width: 19%;
+  }
+  .hero_headline {
+    font-size: 40px;
+    width: 80%;
+    line-height: 1.2;
+    z-index: 5;
+  }
+  .hero::after {
+    content: "";
+    height: 600px;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -600px;
+    right: -500px;
+    z-index: -1;
+    opacity: 0.5;
+  }
+}
 .showcase {
   height: 100vh;
   background-color: #293db2;
@@ -10480,7 +10572,7 @@ readers do not read off random characters that represent icons */
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(59, 69, 23, 0.9);
+  background-color: rgba(74, 190, 124, 0.9);
   opacity: 0.5;
   z-index: 2;
 }
