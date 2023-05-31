@@ -10630,7 +10630,7 @@ readers do not read off random characters that represent icons */
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(107, 11, 142, 0.9);
+    background-color: rgba(29, 36, 132, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -10676,7 +10676,7 @@ readers do not read off random characters that represent icons */
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(64, 74, 79, 0.9);
+    background-color: rgba(35, 25, 122, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -10728,78 +10728,154 @@ readers do not read off random characters that represent icons */
     margin-bottom: 40px;
   }
 }
-.investment {
-  width: 100%;
+@media screen and (min-width: 601px) {
+  .investment {
+    width: 100%;
+  }
+  .investment_item {
+    display: flex;
+    width: 100%;
+    border-left: 20px solid tomato;
+    justify-content: space-between;
+    position: relative;
+    transition: all 0.2s;
+  }
+  .investment_item_title {
+    margin-left: 40px;
+    margin-top: 120px;
+  }
+  .investment_item_section {
+    width: 70%;
+    padding: 120px 80px 120px 100px;
+  }
+  .investment_item_head {
+    font-size: 70px;
+    font-weight: 700;
+  }
+  .investment_item_content {
+    font-size: 18px;
+    color: #1f1f1f;
+  }
+  .investment_item_arrow {
+    font-size: 24px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+  }
+  .investment_item.one {
+    border-left: 20px solid #293db2;
+  }
+  .investment_item.one:hover {
+    background-color: blue;
+    color: #fff;
+  }
+  .investment_item.two {
+    border-left: 20px solid #c92173;
+  }
+  .investment_item.two:hover {
+    background-color: #c92173;
+    color: #fff;
+  }
+  .investment_item.three {
+    border-left: 20px solid #fc9900;
+  }
+  .investment_item.three:hover {
+    background-color: #fc9900;
+    color: #fff;
+  }
+  .investment_item.four {
+    border-left: 20px solid #ed1c24;
+  }
+  .investment_item.four:hover {
+    background-color: #ed1c24;
+    color: #fff;
+  }
+  .investment_item.five {
+    border-left: 20px solid #293db2;
+  }
+  .investment_item.five:hover {
+    background-color: #293db2;
+    color: #fff;
+  }
+  .investment_item:hover .investment_item_content {
+    color: #fff;
+  }
 }
-.investment_item {
-  display: flex;
-  width: 100%;
-  border-left: 20px solid tomato;
-  justify-content: space-between;
-  position: relative;
-  transition: all 0.2s;
+@media screen and (max-width: 600px) {
+  .investment {
+    width: 100%;
+  }
+  .investment_item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    transition: all 0.2s;
+    gap: 20px;
+  }
+  .investment_item_title {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .investment_item_section {
+    margin-left: 25px;
+  }
+  .investment_item_head {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .investment_item_content {
+    font-size: 18px;
+    color: #1f1f1f;
+    margin-top: 20px;
+  }
+  .investment_item_arrow {
+    font-size: 18px;
+    margin-left: 25px;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
+  .investment_item.one {
+    border-left: 20px solid #293db2;
+  }
+  .investment_item.one:hover {
+    background-color: blue;
+    color: #fff;
+  }
+  .investment_item.two {
+    border-left: 20px solid #c92173;
+  }
+  .investment_item.two:hover {
+    background-color: #c92173;
+    color: #fff;
+  }
+  .investment_item.three {
+    border-left: 20px solid #fc9900;
+  }
+  .investment_item.three:hover {
+    background-color: #fc9900;
+    color: #fff;
+  }
+  .investment_item.four {
+    border-left: 20px solid #ed1c24;
+  }
+  .investment_item.four:hover {
+    background-color: #ed1c24;
+    color: #fff;
+  }
+  .investment_item.five {
+    border-left: 20px solid #293db2;
+  }
+  .investment_item.five:hover {
+    background-color: #293db2;
+    color: #fff;
+  }
+  .investment_item:hover .investment_item_content {
+    color: #fff;
+  }
 }
-.investment_item_title {
-  margin-left: 40px;
-  margin-top: 120px;
-}
-.investment_item_section {
-  width: 70%;
-  padding: 120px 80px 120px 100px;
-}
-.investment_item_head {
-  font-size: 70px;
-  font-weight: 700;
-}
-.investment_item_content {
-  font-size: 18px;
-  color: #1f1f1f;
-}
-.investment_item_arrow {
-  font-size: 24px;
-  position: absolute;
-  right: 30px;
-  top: 50%;
-}
-.investment_item.one {
-  border-left: 20px solid #293db2;
-}
-.investment_item.one:hover {
-  background-color: blue;
-  color: #fff;
-}
-.investment_item.two {
-  border-left: 20px solid #c92173;
-}
-.investment_item.two:hover {
-  background-color: #c92173;
-  color: #fff;
-}
-.investment_item.three {
-  border-left: 20px solid #fc9900;
-}
-.investment_item.three:hover {
-  background-color: #fc9900;
-  color: #fff;
-}
-.investment_item.four {
-  border-left: 20px solid #ed1c24;
-}
-.investment_item.four:hover {
-  background-color: #ed1c24;
-  color: #fff;
-}
-.investment_item.five {
-  border-left: 20px solid #293db2;
-}
-.investment_item.five:hover {
-  background-color: #293db2;
-  color: #fff;
-}
-.investment_item:hover .investment_item_content {
-  color: #fff;
-}
-
 .footer {
   display: flex;
   justify-content: space-between;
