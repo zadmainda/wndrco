@@ -231,17 +231,16 @@
         }
         &::after{
             content: '';
-            height: 200px;
-            width: 200px;
+            height: 300px;
+            width: 300px;
             background-color: #fff;
             border-radius: 50%;
             position: absolute;
-            bottom: -100px;
-            right: -100px;
+            bottom: -130px;
+            right: -130px;
             z-index: -1;
             opacity: 0.5;
         }
-        
     }
 }
 
@@ -483,7 +482,7 @@
         }
     }
 }
-
+@media screen and (min-width:601px) {
 .portifolio{
     height: 300px;
     display: flex;
@@ -502,7 +501,23 @@
         max-width: 800px;
     }
 }
+}
 
+@media screen and (max-width:600px) {
+    .portifolio{
+        margin: 20px;
+    
+        &_head{
+            font-size: 50px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        &_body{
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+    }
+}
 
 .investment{
     width: 100%;

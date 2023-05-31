@@ -10480,13 +10480,13 @@ readers do not read off random characters that represent icons */
   }
   .hero::after {
     content: "";
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    bottom: -100px;
-    right: -100px;
+    bottom: -130px;
+    right: -130px;
     z-index: -1;
     opacity: 0.5;
   }
@@ -10630,7 +10630,7 @@ readers do not read off random characters that represent icons */
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(137, 6, 51, 0.9);
+    background-color: rgba(107, 11, 142, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -10676,7 +10676,7 @@ readers do not read off random characters that represent icons */
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(77, 27, 171, 0.9);
+    background-color: rgba(64, 74, 79, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -10695,24 +10695,39 @@ readers do not read off random characters that represent icons */
     height: 100%;
   }
 }
-.portifolio {
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@media screen and (min-width: 601px) {
+  .portifolio {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .portifolio_head, .portifolio_body {
+    margin-left: 15%;
+  }
+  .portifolio_head {
+    font-size: 70px;
+    margin-bottom: 30px;
+  }
+  .portifolio_body {
+    font-size: 20px;
+    max-width: 800px;
+  }
 }
-.portifolio_head, .portifolio_body {
-  margin-left: 15%;
+@media screen and (max-width: 600px) {
+  .portifolio {
+    margin: 20px;
+  }
+  .portifolio_head {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  .portifolio_body {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
 }
-.portifolio_head {
-  font-size: 70px;
-  margin-bottom: 30px;
-}
-.portifolio_body {
-  font-size: 20px;
-  max-width: 800px;
-}
-
 .investment {
   width: 100%;
 }
