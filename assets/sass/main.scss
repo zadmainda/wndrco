@@ -1,0 +1,12 @@
+@import "reset";
+@import "variables";
+@import "front";
+@import "components";
+
+// importing core styling file
+@import "../fonts/fontawesome/scss/fontawesome.scss";
+
+// our project needs Solid + Brands
+@import "../fonts/fontawesome/scss/solid.scss";
+@import "../fonts/fontawesome/scss/brands.scss";
+

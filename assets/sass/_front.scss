@@ -1,16 +1,3 @@
-@import "reset";
-@import "variables";
-
-// importing core styling file
-@import "../fonts/fontawesome/scss/fontawesome.scss";
-
-// our project needs Solid + Brands
-@import "../fonts/fontawesome/scss/solid.scss";
-@import "../fonts/fontawesome/scss/brands.scss";
-
-
-
-
 
 
 
@@ -759,4 +746,47 @@
 }
 
 
-@media screen and (max-width:600px) {}
+
+
+.team-main{
+    padding-top: 100px;
+    background-color: $creamWhite;
+
+    &_banner{
+        width: 100vw;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        img{
+            width: 100%
+        }
+    }
+    &_content{
+        width: 60vw;
+        margin: 0 auto;
+        padding: 50px;
+        border: 2px solid red;
+    }
+    h3{
+        font-size: 38px;
+        font-weight: 400;
+    }
+    p{
+        padding-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
