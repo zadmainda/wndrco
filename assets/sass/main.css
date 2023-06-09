@@ -357,7 +357,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(110, 31, 169, 0.9);
+    background-color: rgba(11, 163, 173, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -403,7 +403,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(110, 195, 168, 0.9);
+    background-color: rgba(80, 104, 114, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -623,6 +623,7 @@ P {
 .team-main {
   padding-top: 100px;
   background-color: #F2EDE3;
+  padding-bottom: 100px;
 }
 .team-main_banner {
   width: 100vw;
@@ -645,6 +646,27 @@ P {
 }
 .team-main p {
   padding-top: 20px;
+}
+
+.employee {
+  margin: 20px 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.employee_card {
+  margin-bottom: 60px;
+  margin-right: 12px;
+}
+.employee_card img {
+  width: 100%;
+}
+.employee_card h3 {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 15px;
+}
+.employee_card p {
+  padding-left: 15px;
 }
 
 /*!
