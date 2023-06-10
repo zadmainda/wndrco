@@ -12,6 +12,7 @@ ul {
 
 body {
   font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
 }
 
 P {
@@ -335,6 +336,15 @@ P {
     margin: 20px 5%;
     flex-wrap: wrap;
   }
+  .gallery h1 {
+    font-size: 70px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .gallery p {
+    width: 100%;
+    margin-bottom: 40px;
+  }
   .gallery_card {
     width: 33%;
     position: relative;
@@ -357,7 +367,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(134, 83, 39, 0.9);
+    background-color: rgba(102, 42, 155, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -403,7 +413,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(40, 67, 7, 0.9);
+    background-color: rgba(79, 189, 155, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -685,15 +695,17 @@ P {
 @media only screen and (max-width: 600px) {
   .news_link {
     flex-direction: column;
+    padding: 20px;
+    margin: 0 15px;
   }
 }
 .news_img {
   -o-object-fit: cover;
      object-fit: cover;
+  display: inline-block;
 }
 .news_img img {
   width: 100%;
-  height: 100%;
 }
 .news_content {
   padding: 40px;
