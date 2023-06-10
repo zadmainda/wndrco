@@ -1,0 +1,152 @@
+.navbar {
+    background-color: $creamWhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 60px 60px 5%;
+
+
+    &_brand {
+        width: 10%;
+    }
+
+    &_link {
+        list-style: none;
+        display: flex;
+        width: 500px;
+        justify-content: space-around;
+        position: relative;
+
+        #toggle {
+            display: none;
+            outline: none;
+        }
+
+        &_item {
+            display: block;
+            margin-left: 16px;
+            position: relative;
+
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                padding: 10px;
+                font-size: 16px;
+                font-weight: 700;
+                color: $primary-color;
+
+                &:hover {
+                    color: $brightBlue;
+                }
+            }
+        }
+    }
+}
+
+.link_item_btn {
+    font-size: 16px;
+    font-weight: 700;
+    color: $primary-color;
+    text-transform: uppercase;
+}
+
+.link_item_btn:hover {
+    color: $brightBlue;
+}
+
+.dropdown {
+    opacity: 1;
+}
+
+.navbar_link_item:hover .dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+
+    &_item a {
+        line-height: 1.8;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .navbar {
+        background-color: $creamWhite;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 6px 6px 6px;
+
+
+        &_brand {
+            width: 10%;
+        }
+
+        &_link {
+            list-style: none;
+            display: flex;
+            width: 400px;
+            justify-content: space-around;
+            position: relative;
+
+            #toggle {
+                display: none;
+                outline: none;
+            }
+
+            &_item {
+                display: block;
+                margin-left: 16px;
+                position: relative;
+
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    padding: 10px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $primary-color;
+
+                    &:hover {
+                        color: $brightBlue;
+                    }
+                }
+            }
+        }
+    }
+
+    .link_item_btn {
+        font-size: 16px;
+        font-weight: 700;
+        color: $primary-color;
+        text-transform: uppercase;
+    }
+
+    .link_item_btn:hover {
+        color: $brightBlue;
+    }
+
+    .dropdown {
+        opacity: 1;
+    }
+
+    .navbar_link_item:hover .dropdown {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+
+        &_item a {
+            line-height: 1.8;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+
+}
