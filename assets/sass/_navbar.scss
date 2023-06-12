@@ -1,0 +1,59 @@
+.navbar {
+    background-color: $creamWhite;
+    // border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 5px;
+
+    &_brand {
+
+        transform: scale(0.45);
+
+    }
+
+    &_link {
+        display: flex;
+
+        &_item {
+            padding: 10px 15px;
+            position: relative;
+            
+
+            a {
+                font-size: 20px;
+                text-transform: uppercase;
+                color: $primary-color;
+                font-weight: 600;
+                transition: all .3s;
+
+                &:hover {
+                    color: $brightBlue;
+                }
+            }
+
+            &:hover .navbar_dropdown {
+                border-radius: 10px;
+                position: absolute;
+                z-index: 6;
+                top: 3rem;
+                // padding: 10px;
+                box-shadow: 1px 1px 30px 3px rgba(31, 31, 31, 0.45);
+                width: 170px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &_item {
+                    padding: 10px;
+                }
+
+            }
+
+        }
+    }
+
+    &_dropdown {
+        display: none;
+    }
+}

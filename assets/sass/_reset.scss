@@ -4,14 +4,23 @@
     box-sizing: border-box;
 }
 
-ul{
-    margin: 0;
-    padding: 0;
-}
-
 body{
     // font-family: 'Gilroy', sans-serif;
     font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+a{
+    text-decoration: none;
     font-size: 18px;
 }
 

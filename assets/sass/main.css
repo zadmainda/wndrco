@@ -5,13 +5,19 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 18px;
+}
+
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-body {
-  font-family: "Barlow Condensed", sans-serif;
+a {
+  text-decoration: none;
   font-size: 18px;
 }
 
@@ -24,6 +30,51 @@ P {
   font-weight: normal;
   font-style: normal;
 }
+.navbar {
+  background-color: #F2EDE3;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 5px;
+}
+.navbar_brand {
+  transform: scale(0.45);
+}
+.navbar_link {
+  display: flex;
+}
+.navbar_link_item {
+  padding: 10px 15px;
+  position: relative;
+}
+.navbar_link_item a {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(31, 31, 31);
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.navbar_link_item a:hover {
+  color: #293db2;
+}
+.navbar_link_item:hover .navbar_dropdown {
+  border-radius: 10px;
+  position: absolute;
+  z-index: 6;
+  top: 3rem;
+  box-shadow: 1px 1px 30px 3px rgba(31, 31, 31, 0.45);
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar_link_item:hover .navbar_dropdown_item {
+  padding: 10px;
+}
+.navbar_dropdown {
+  display: none;
+}
+
 @media screen and (min-width: 601px) {
   .hero {
     height: calc(100vh + 110px);
@@ -177,10 +228,10 @@ P {
   .partners_header {
     font-size: 70px;
     line-height: 1.5;
-    color: #1f1f1f;
+    color: rgb(31, 31, 31);
   }
   .partners_body {
-    color: #1f1f1f;
+    color: rgb(31, 31, 31);
     font-size: 20px;
     line-height: 1.5;
   }
@@ -192,10 +243,10 @@ P {
   .partners_header {
     font-size: 50px;
     line-height: 1.5;
-    color: #1f1f1f;
+    color: rgb(31, 31, 31);
   }
   .partners_body {
-    color: #1f1f1f;
+    color: rgb(31, 31, 31);
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 30px;
@@ -238,7 +289,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(45, 151, 187, 0.9);
+    background-color: rgba(104, 190, 47, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -284,7 +335,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(139, 132, 219, 0.9);
+    background-color: rgba(131, 134, 183, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -362,7 +413,7 @@ P {
   }
   .investment_item_content {
     font-size: 18px;
-    color: #1f1f1f;
+    color: rgb(31, 31, 31);
   }
   .investment_item_arrow {
     font-size: 24px;
@@ -436,7 +487,7 @@ P {
   }
   .investment_item_content {
     font-size: 18px;
-    color: #1f1f1f;
+    color: rgb(31, 31, 31);
     margin-top: 20px;
   }
   .investment_item_arrow {
@@ -488,7 +539,7 @@ P {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  background-color: #1f1f1f;
+  background-color: rgb(31, 31, 31);
   font-size: 20px;
 }
 .footer a {
@@ -556,7 +607,7 @@ P {
 .news_link {
   display: flex;
   text-decoration: none;
-  color: #1f1f1f;
+  color: rgb(31, 31, 31);
   margin: 50px 50px;
 }
 .news_link:hover .news_content {
