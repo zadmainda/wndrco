@@ -3,12 +3,16 @@
     // border: 1px solid black;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    z-index: 5px;
+    padding: 40px 80px;
+    z-index: 5;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     &_brand {
 
-        transform: scale(0.45);
+        width: 200px;
 
     }
 
@@ -21,7 +25,7 @@
             
 
             a {
-                font-size: 20px;
+                font-size: 18px;
                 text-transform: uppercase;
                 color: $primary-color;
                 font-weight: 600;
@@ -36,13 +40,14 @@
                 border-radius: 10px;
                 position: absolute;
                 z-index: 6;
-                top: 3rem;
+                top: 2.5rem;
                 // padding: 10px;
                 box-shadow: 1px 1px 30px 3px rgba(31, 31, 31, 0.45);
                 width: 170px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                background-color: $creamWhite;
 
                 &_item {
                     padding: 10px;

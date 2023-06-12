@@ -34,11 +34,15 @@ P {
   background-color: #F2EDE3;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  z-index: 5px;
+  padding: 40px 80px;
+  z-index: 5;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .navbar_brand {
-  transform: scale(0.45);
+  width: 200px;
 }
 .navbar_link {
   display: flex;
@@ -48,7 +52,7 @@ P {
   position: relative;
 }
 .navbar_link_item a {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   color: rgb(31, 31, 31);
   font-weight: 600;
@@ -61,12 +65,13 @@ P {
   border-radius: 10px;
   position: absolute;
   z-index: 6;
-  top: 3rem;
+  top: 2.5rem;
   box-shadow: 1px 1px 30px 3px rgba(31, 31, 31, 0.45);
   width: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #F2EDE3;
 }
 .navbar_link_item:hover .navbar_dropdown_item {
   padding: 10px;
@@ -289,7 +294,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(104, 190, 47, 0.9);
+    background-color: rgba(25, 168, 93, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -335,7 +340,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(131, 134, 183, 0.9);
+    background-color: rgba(56, 28, 129, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
