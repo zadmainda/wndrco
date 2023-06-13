@@ -56,24 +56,35 @@
             }
 
         }
-    }
 
+        
+        
+    }
     &_dropdown {
         display: none;
     }
+    .fa-bars{
+        display: none;
+    }
+    #toggle{
+        display: none;
+        border: 2px solid green;
+    }
+
     @media screen and (max-width:600px) {
         padding: 10px;
         position: relative;
-        &_brand{
+        &_brand {
             width: 100px;
         }
         &_link{
+            // display: none;
             flex-direction: column;
             position: absolute;
             top: 110%;
             width: 95%;
             height: 630px;
-            background-color: rgba(9, 9, 9, 0.9);
+            //background-color: rgba(9, 9, 9, 0.9);
             &_item{
                 padding: 20px;
                 a{
@@ -81,14 +92,15 @@
                     font-weight: 400;
                     font-size: 22px;
                 }
-                i{
-                    color: #fff;
-                }
             }
         }
+        .fa-bars{
+            display: block;
+
+        }
+        #toggle:checked + .navbar_brand{
+            width: 400px
+        }
+
     }
-    // &::before{
-    //     content: "\f0c9";
-    //     font: normal normal normal 60px/1 FontAwesome;
-    // }
 }

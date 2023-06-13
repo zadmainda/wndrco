@@ -79,6 +79,13 @@ P {
 .navbar_dropdown {
   display: none;
 }
+.navbar .fa-bars {
+  display: none;
+}
+.navbar #toggle {
+  display: none;
+  border: 2px solid green;
+}
 @media screen and (max-width: 600px) {
   .navbar {
     padding: 10px;
@@ -93,7 +100,6 @@ P {
     top: 110%;
     width: 95%;
     height: 630px;
-    background-color: rgba(9, 9, 9, 0.9);
   }
   .navbar_link_item {
     padding: 20px;
@@ -103,8 +109,11 @@ P {
     font-weight: 400;
     font-size: 22px;
   }
-  .navbar_link_item i {
-    color: #fff;
+  .navbar .fa-bars {
+    display: block;
+  }
+  .navbar #toggle:checked + .navbar_brand {
+    width: 400px;
   }
 }
 
@@ -322,7 +331,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(110, 179, 179, 0.9);
+    background-color: rgba(66, 16, 223, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -368,7 +377,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(10, 194, 241, 0.9);
+    background-color: rgba(150, 165, 88, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
