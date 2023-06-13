@@ -84,7 +84,6 @@ P {
 }
 .navbar #toggle {
   display: none;
-  border: 2px solid green;
 }
 @media screen and (max-width: 600px) {
   .navbar {
@@ -95,25 +94,33 @@ P {
     width: 100px;
   }
   .navbar_link {
-    flex-direction: column;
-    position: absolute;
-    top: 110%;
-    width: 95%;
-    height: 630px;
-  }
-  .navbar_link_item {
-    padding: 20px;
-  }
-  .navbar_link_item a {
-    color: #fff;
-    font-weight: 400;
-    font-size: 22px;
+    display: none;
   }
   .navbar .fa-bars {
     display: block;
   }
-  .navbar #toggle:checked + .navbar_brand {
-    width: 400px;
+  .navbar #toggle:checked ~ .navbar_link {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 12px;
+    margin: 0;
+    left: -2px;
+    top: 110%;
+    width: 102%;
+    height: 100vh;
+    background-color: rgba(9, 9, 9, 0.98);
+  }
+  .navbar #toggle:checked ~ .navbar_link_item {
+    padding: 20px;
+  }
+  .navbar #toggle:checked ~ .navbar_link a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 26px;
+  }
+  .navbar .fa-angle-down {
+    color: #fff;
   }
 }
 
@@ -331,7 +338,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(66, 16, 223, 0.9);
+    background-color: rgba(12, 44, 49, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -377,7 +384,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(150, 165, 88, 0.9);
+    background-color: rgba(18, 129, 96, 0.9);
     opacity: 0.5;
     z-index: 2;
   }

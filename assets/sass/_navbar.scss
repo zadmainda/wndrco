@@ -68,7 +68,7 @@
     }
     #toggle{
         display: none;
-        border: 2px solid green;
+
     }
 
     @media screen and (max-width:600px) {
@@ -78,28 +78,44 @@
             width: 100px;
         }
         &_link{
-            // display: none;
-            flex-direction: column;
-            position: absolute;
-            top: 110%;
-            width: 95%;
-            height: 630px;
-            //background-color: rgba(9, 9, 9, 0.9);
-            &_item{
-                padding: 20px;
-                a{
-                    color: #fff;
-                    font-weight: 400;
-                    font-size: 22px;
-                }
-            }
+            display: none;
         }
         .fa-bars{
             display: block;
 
         }
-        #toggle:checked + .navbar_brand{
-            width: 400px
+        #toggle:checked ~ .navbar_link{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            gap: 12px;
+            margin: 0;
+            //align-items: center;
+            // justify-content: center;
+            left: -2px;
+            top: 110%;
+            width: 102%;
+            height: 100vh;
+            background-color: rgba(9, 9, 9, 0.98);
+            &_item{
+                padding: 20px;
+                
+            }
+            a{
+                color: #fff;
+                font-weight: 400;
+                font-size: 26px;
+            }
+
+            
+            
+        }
+        // &:has(#toggle:checked){
+        //     background-color: red;
+        // }
+
+        .fa-angle-down{
+            color: #fff;
         }
 
     }
