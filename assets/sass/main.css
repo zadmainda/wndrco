@@ -79,6 +79,34 @@ P {
 .navbar_dropdown {
   display: none;
 }
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 10px;
+    position: relative;
+  }
+  .navbar_brand {
+    width: 100px;
+  }
+  .navbar_link {
+    flex-direction: column;
+    position: absolute;
+    top: 110%;
+    width: 95%;
+    height: 630px;
+    background-color: rgba(9, 9, 9, 0.9);
+  }
+  .navbar_link_item {
+    padding: 20px;
+  }
+  .navbar_link_item a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+  }
+  .navbar_link_item i {
+    color: #fff;
+  }
+}
 
 @media screen and (min-width: 601px) {
   .hero {
@@ -294,7 +322,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(25, 168, 93, 0.9);
+    background-color: rgba(110, 179, 179, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -340,7 +368,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(56, 28, 129, 0.9);
+    background-color: rgba(10, 194, 241, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
