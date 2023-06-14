@@ -606,6 +606,10 @@
     padding-top: 100px;
     background-color: $creamWhite;
     padding-bottom: 100px;
+    @media screen and (max-width:600px){
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
 
     &_banner{
         width: 100vw;
@@ -615,6 +619,7 @@
             width: 100%
         }
     }
+    
     &_content{
         width: 60vw;
         margin: 0 auto;
@@ -627,6 +632,20 @@
     }
     p{
         padding-top: 20px;
+    }
+    @media screen and (max-width:600px){
+        &_content{
+            width: 96%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 400;
+        }
+        p{
+            padding-top: 10px;
+        }
     }
 }
 

@@ -110,9 +110,9 @@
             
             
         }
-        // &:has(#toggle:checked){
-        //     background-color: red;
-        // }
+        &:has(#toggle:checked){
+            background-color: rgba(9, 9, 9, 0.98);
+        }
 
         .fa-angle-down{
             color: #fff;

@@ -119,6 +119,9 @@ P {
     font-weight: 400;
     font-size: 26px;
   }
+  .navbar:has(#toggle:checked) {
+    background-color: rgba(9, 9, 9, 0.98);
+  }
   .navbar .fa-angle-down {
     color: #fff;
   }
@@ -338,7 +341,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(12, 44, 49, 0.9);
+    background-color: rgba(116, 101, 48, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -384,7 +387,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(18, 129, 96, 0.9);
+    background-color: rgba(19, 159, 117, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -606,6 +609,12 @@ P {
   background-color: #F2EDE3;
   padding-bottom: 100px;
 }
+@media screen and (max-width: 600px) {
+  .team-main {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}
 .team-main_banner {
   width: 100vw;
   aspect-ratio: 16/9;
@@ -626,6 +635,20 @@ P {
 }
 .team-main p {
   padding-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  .team-main_content {
+    width: 96%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .team-main h3 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .team-main p {
+    padding-top: 10px;
+  }
 }
 
 .employee {
