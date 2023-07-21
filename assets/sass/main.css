@@ -365,7 +365,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(126, 88, 233, 0.9);
+    background-color: rgba(132, 118, 122, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -411,7 +411,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(66, 135, 149, 0.9);
+    background-color: rgba(80, 85, 94, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -815,7 +815,7 @@ P {
 .section {
   background-color: #F2EDE3;
   color: #293db2;
-  height: 400px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
