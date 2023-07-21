@@ -1,15 +1,23 @@
 .section{
     background-color: $creamWhite;
     color: $brightBlue;
-    height: 350px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 80px;
+    @media screen and (max-width:600px){
+        height: 150px;
+    }
     
     h1{
         font-size: 70px;
         font-weight: 700;
         letter-spacing: 2px;
+        @media screen and (max-width:600px){
+            font-size: 50px;
+            font-weight: 600;
+        }
     }
 
 
@@ -20,9 +28,17 @@
     padding: 50px 150px;
     grid-template-columns: repeat(5, 1fr);
 
+    @media screen and (max-width:600px){
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+    }
+
     &_item{
         width: 250px;
-        // border: 1px solid red;
+        @media screen and (max-width:600px){
+            width: 200px;
+        }
+        
         img{
             width: 100%;
         }

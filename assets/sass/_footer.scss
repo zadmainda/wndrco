@@ -1,0 +1,33 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: $primary-color;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+
+    a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        line-height: 6;
+    }
+
+    &_terms a:last-child {
+        margin-left: 30px;
+    }
+    @media screen and (max-width:600px){
+        flex-direction: column;
+        padding: 20px;
+        a{
+            line-height: 2;
+        }
+        &_terms a:last-child {
+            margin-left: 20px;
+        }
+    }
+    
+}

@@ -1,6 +1,5 @@
 
 
-@media screen and (min-width:601px) {
     .hero {
         height: calc(100vh + 110px);
         background-color: $creamWhite;
@@ -37,7 +36,7 @@
         }
 
     }
-}
+
 
 
 @media screen and (max-width:600px) {
@@ -581,35 +580,7 @@
     }
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    background-color: $primary-color;
-    font-size: 20px;
 
-    a {
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
-        line-height: 6;
-    }
-
-    &_terms a:last-child {
-        margin-left: 30px;
-    }
-    @media screen and (max-width:600px){
-        flex-direction: column;
-        padding: 20px;
-        a{
-            line-height: 2;
-        }
-        &_terms a:last-child {
-            margin-left: 20px;
-        }
-    }
-    
-}
 
 
 
