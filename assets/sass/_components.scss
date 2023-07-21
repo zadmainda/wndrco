@@ -27,6 +27,7 @@
     display: grid;
     padding: 50px 150px;
     grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 150px;
 
     @media screen and (max-width:600px){
         grid-template-columns: repeat(2, 1fr);
