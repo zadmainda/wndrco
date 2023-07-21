@@ -365,7 +365,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(32, 148, 183, 0.9);
+    background-color: rgba(126, 88, 233, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -411,7 +411,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(130, 55, 25, 0.9);
+    background-color: rgba(66, 135, 149, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -810,6 +810,32 @@ P {
 }
 .news_date {
   font-size: 16px;
+}
+
+.section {
+  background-color: #F2EDE3;
+  color: #293db2;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section h1 {
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.logoGrid {
+  display: grid;
+  padding: 50px 150px;
+  grid-template-columns: repeat(5, 1fr);
+}
+.logoGrid_item {
+  width: 250px;
+}
+.logoGrid_item img {
+  width: 100%;
 }
 
 /*!

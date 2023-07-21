@@ -1,0 +1,30 @@
+.section{
+    background-color: $creamWhite;
+    color: $brightBlue;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    h1{
+        font-size: 70px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+
+}
+
+.logoGrid{
+    display: grid;
+    padding: 50px 150px;
+    grid-template-columns: repeat(5, 1fr);
+
+    &_item{
+        width: 250px;
+        // border: 1px solid red;
+        img{
+            width: 100%;
+        }
+    }
+}
