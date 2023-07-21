@@ -54,7 +54,7 @@ P {
 .navbar_link_item a {
   font-size: 18px;
   text-transform: uppercase;
-  color: rgb(31, 31, 31);
+  color: #1f1f1f;
   font-weight: 600;
   transition: all 0.3s;
 }
@@ -66,11 +66,11 @@ P {
   position: absolute;
   z-index: 6;
   top: 2.5rem;
+  padding: 10px;
   box-shadow: 1px 1px 30px 3px rgba(31, 31, 31, 0.45);
-  width: 170px;
+  width: 180px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #F2EDE3;
 }
 .navbar_link_item:hover .navbar_dropdown_item {
@@ -85,19 +85,24 @@ P {
 .navbar #toggle {
   display: none;
 }
+.navbar #toggle-2 {
+  display: none;
+}
 @media screen and (max-width: 600px) {
   .navbar {
-    padding: 10px;
+    padding: 20px;
     position: relative;
+    align-items: center;
   }
   .navbar_brand {
-    width: 100px;
+    width: 120px;
   }
   .navbar_link {
     display: none;
   }
   .navbar .fa-bars {
     display: block;
+    font-size: 30px;
   }
   .navbar #toggle:checked ~ .navbar_link {
     display: flex;
@@ -106,13 +111,23 @@ P {
     gap: 12px;
     margin: 0;
     left: -2px;
-    top: 110%;
+    top: 99%;
     width: 102%;
     height: 100vh;
-    background-color: rgba(9, 9, 9, 0.98);
+    background-color: #1f1f1f;
+    padding-top: 30px;
+    padding-left: 30px;
   }
   .navbar #toggle:checked ~ .navbar_link_item {
     padding: 20px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 26px;
+    position: relative;
+  }
+  .navbar #toggle:checked ~ .navbar_link:hover .navbar_dropdown {
+    max-height: 0;
+    overflow: hidden;
   }
   .navbar #toggle:checked ~ .navbar_link a {
     color: #fff;
@@ -120,11 +135,20 @@ P {
     font-size: 26px;
   }
   .navbar:has(#toggle:checked) {
-    background-color: rgba(9, 9, 9, 0.98);
+    background-color: #1f1f1f;
+    padding: 20px;
+  }
+  .navbar #toggle:checked ~ label .fa-bars {
+    color: #fff;
   }
   .navbar .fa-angle-down {
     color: #fff;
   }
+}
+
+.navbar_link_item:target .navbar_dropdown {
+  max-height: 200px;
+  opacity: 1;
 }
 
 @media screen and (min-width: 601px) {
@@ -280,10 +304,10 @@ P {
   .partners_header {
     font-size: 70px;
     line-height: 1.5;
-    color: rgb(31, 31, 31);
+    color: #1f1f1f;
   }
   .partners_body {
-    color: rgb(31, 31, 31);
+    color: #1f1f1f;
     font-size: 20px;
     line-height: 1.5;
   }
@@ -295,10 +319,10 @@ P {
   .partners_header {
     font-size: 50px;
     line-height: 1.5;
-    color: rgb(31, 31, 31);
+    color: #1f1f1f;
   }
   .partners_body {
-    color: rgb(31, 31, 31);
+    color: #1f1f1f;
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 30px;
@@ -341,7 +365,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(113, 25, 144, 0.9);
+    background-color: rgba(32, 148, 183, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -387,7 +411,7 @@ P {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(82, 146, 164, 0.9);
+    background-color: rgba(130, 55, 25, 0.9);
     opacity: 0.5;
     z-index: 2;
   }
@@ -465,7 +489,7 @@ P {
   }
   .investment_item_content {
     font-size: 18px;
-    color: rgb(31, 31, 31);
+    color: #1f1f1f;
   }
   .investment_item_arrow {
     font-size: 24px;
@@ -539,7 +563,7 @@ P {
   }
   .investment_item_content {
     font-size: 18px;
-    color: rgb(31, 31, 31);
+    color: #1f1f1f;
     margin-top: 20px;
   }
   .investment_item_arrow {
@@ -591,7 +615,7 @@ P {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  background-color: rgb(31, 31, 31);
+  background-color: #1f1f1f;
   font-size: 20px;
 }
 .footer a {
@@ -719,7 +743,7 @@ P {
 .news_link {
   display: flex;
   text-decoration: none;
-  color: rgb(31, 31, 31);
+  color: #1f1f1f;
   margin: 50px 50px;
 }
 @media only screen and (max-width: 600px) {

@@ -41,12 +41,12 @@
                 position: absolute;
                 z-index: 6;
                 top: 2.5rem;
-                // padding: 10px;
+                padding: 10px;
                 box-shadow: 1px 1px 30px 3px rgba(31, 31, 31, 0.45);
-                width: 170px;
+                width: 180px;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                // align-items: center;
                 background-color: $creamWhite;
 
                 &_item {
@@ -56,67 +56,98 @@
             }
 
         }
-
-        
         
     }
-    &_dropdown {
+    &_dropdown{
         display: none;
     }
+    
+
     .fa-bars{
         display: none;
     }
+
     #toggle{
+        display: none;
+
+    }
+    #toggle-2{
         display: none;
 
     }
 
     @media screen and (max-width:600px) {
-        padding: 10px;
+        padding: 20px;
         position: relative;
+        align-items: center;
+    
         &_brand {
-            width: 100px;
+            width: 120px;
         }
         &_link{
             display: none;
         }
         .fa-bars{
             display: block;
-
+            font-size: 30px;
         }
+        
+ 
+
         #toggle:checked ~ .navbar_link{
             display: flex;
             flex-direction: column;
             position: absolute;
             gap: 12px;
             margin: 0;
-            //align-items: center;
-            // justify-content: center;
             left: -2px;
-            top: 110%;
+            top: 99%;
             width: 102%;
             height: 100vh;
-            background-color: rgba(9, 9, 9, 0.98);
+            background-color: #1f1f1f;
+            padding-top: 30px;
+            padding-left: 30px;
             &_item{
-                padding: 20px;
+                padding: 20px; 
+                color: #fff;
+                font-weight: 400;
+                font-size: 26px;
+                position: relative;
                 
-            }
+                }
+                &:hover .navbar_dropdown{
+                    max-height: 0;
+                    overflow: hidden;
+                    
+                }
+               
+            
             a{
                 color: #fff;
                 font-weight: 400;
                 font-size: 26px;
             }
 
-            
-            
         }
         &:has(#toggle:checked){
-            background-color: rgba(9, 9, 9, 0.98);
+            background-color: #1f1f1f;
+            padding: 20px;
         }
 
-        .fa-angle-down{
+        #toggle:checked ~ label .fa-bars {
+            color: #fff;
+         
+        }
+        
+        .fa-angle-down {
             color: #fff;
         }
 
     }
+}
+
+.navbar_link_item:target .navbar_dropdown{
+    max-height: 200px;
+    opacity: 1;
+
 }
