@@ -1,0 +1,9 @@
+.jobs{
+  display: flex;
+  flex-direction: column;
+}
+.job{
+  flex: 1;
+  height: 60vh;
+  border: 2px solid red
+}

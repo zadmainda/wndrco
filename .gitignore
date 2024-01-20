@@ -4,3 +4,5 @@
 *.scss.map
 sass/*.css
 sass/style.css.map
+.vscode
+.vscode/
